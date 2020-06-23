@@ -1,0 +1,349 @@
+@import "reset"
+.title
+    font-size: 36px
+    line-height: 41px
+    text-align: left
+    max-width: 700px
+.button
+	display: flex
+	justify-content: center
+	align-items: center
+	color: #fff
+	height: 60px
+	width: 300px
+	background-color: $accent
+	border-radius: 20px
+	box-shadow: 0 4px  4px rgba(0,0,0,0.25)
+	transition: 0.3s
+	cursor: pointer
+	&:hover
+		background-color: $main
+
+.header
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding-top: 30px
+	padding-bottom: 30px
+	&-menu
+		ul
+			display: flex
+			justify-content: flex-end
+			align-items: center
+			li
+				margin: 0 30px
+				position: relative
+				&:after
+					position: absolute
+					content: ''
+					width: 2px
+					height: 20px
+					background: #000
+					right: -29px
+					top: 50%
+					transform: translateY(-50%)
+				&:last-child
+					margin-right: 0
+					&:after
+						display: none
+				a
+					color: #000000
+					font-weight: 700
+					font-size: 16px
+					transition: 0.3s
+					position: relative
+					&:after
+						position: absolute
+						content: ''
+						height: 2px
+						width: 0%
+						bottom: -4px
+						left: 0
+						transition: 0.3s
+						background-color: $main
+					&:hover
+						transition: 0.3s
+						color: $main
+						&:after
+							transition: 0.3s
+							width: 100%
+	&-logo
+		a
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			img
+				display: block
+				margin-right: 20px
+				max-width: 90px
+			p
+				font-size: 16px
+				color: #000000
+				b
+					font-weight: 700
+
+.offer
+	background-image: url(../img/offer.png)
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	width: 100%
+	height: 400px
+	max-width: 1110px
+	margin-top: 20px
+	margin-bottom: 50px
+	img
+		max-width: 100%
+		height: auto	
+	&-bottom
+		h1
+			font-size: 44px
+			line-height: 46px
+			display: block
+			margin-bottom: 25px
+		p
+			color: $accent	
+			font-size: 22px
+			position: relative
+			width: 100%
+			&:after
+				position: absolute
+				content: ''
+				height: 1px
+				width: 100%
+				bottom: -40px
+				background-color: $accent
+				left: 0
+
+.about
+	margin-top: 50px
+	padding-bottom: 70px
+	&-services
+		background-color: $main
+		padding: 50px 70px
+		padding-bottom: 30px
+		h2
+			color: #ffffff
+			font-size: 38px
+			line-height: 40px
+			margin-bottom: 50px
+		&-wrap
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			align-items: center
+			&-item
+				display: flex
+				align-items: center
+				justify-content: flex-start
+				width: 48%
+				margin-bottom: 50px
+				p
+					color: #ffffff
+					font-size: 18px
+				img
+					margin-right: 30px
+	&-wrap
+		display: flex
+		justify-content: space-between
+		&-left
+			display: block
+			width: 48%
+			img
+				max-width: 100%
+				display: flex
+				margin-top: 50px
+			p
+				display: block
+				margin-bottom: 30px
+				font-size: 18px
+		&-right
+			display: block
+			width: 48%
+			background-color: $light
+			position: relative
+			cursor: pointer
+			&:after
+				position: absolute
+				content: ''
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				height: 80px
+				width: 80px
+				background-image: url(../img/icons/video.svg)
+				background-repeat: no-repeat
+				background-size: contain
+				background-position: center center
+	&-menu
+		background-color: $accent
+		padding: 30px
+		margin-top: 70px
+		margin-bottom: 70px
+		ul
+			display: flex
+			justify-content: space-between
+			align-items: center
+			li
+				color: #ffffff
+				font-size: 18px
+				line-height: 24px
+	&-text
+		p
+			margin-bottom: 20px
+			display: block
+			font-size: 18px
+			line-height: 22px
+			b
+				color: $accent
+	.pattern, .pattern2
+		width: 100%
+		display: block
+		margin-top: 70px
+		margin-bottom: 70px
+		height: 80px
+		background-image: url(../img/pattern.png)
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center center
+	.pattern2
+		background-image: url(../img/pattern2.png)
+		margin-bottom: 0
+
+.callback
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	padding-bottom: 70px
+	&-left
+		display: block
+		width: 48%
+		h2
+			color: $accent
+			font-size: 40px
+			padding-bottom: 40px
+		&-text
+			position: relative
+			padding-top: 40px
+			padding-bottom: 40px
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			p
+				font-size: 18px
+				margin-bottom: 20px
+			b
+				color: $accent
+				margin-bottom: 20px
+			a
+				color: #000
+				font-size: 24px
+				&:hover
+					color: $main
+			&:after
+				position: absolute
+				content: ''
+				height: 2px
+				width: 100%
+				top: 0
+				left: 0
+				background-color: $main
+			&:before
+				position: absolute
+				content: ''
+				height: 2px
+				width: 100%
+				bottom: 0
+				left: 0
+				background-color: $main
+	&-right
+		display: block
+		width: 48%
+		position: relative
+		background-color: $main
+		padding: 40px
+		form
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			small	
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				margin: 20px 0 60px 0
+				label
+					width: 10px
+					height: 10px
+					margin-right: 15px
+					cursor: pointer
+					input
+						cursor: pointer
+				p
+					color: #ffffff
+					font-size: 12px
+			input[type="tel"], input[type="email"], input[type="text"]
+				box-shadow: none
+				background: transparent
+				border: none
+				border-bottom: 1px solid #ffffff
+				width: 100%
+				height: 50px
+				display: flex
+				color: #ffffff
+				margin-bottom: 20px
+				&::placeholder
+					color: #ffffff
+					font-size: 16px
+			input[type="submit"]
+				position: absolute
+				bottom: 0
+				left: 0
+				background-color: #fff
+				height: 60px
+				width: 210px
+				color: $main
+				font-size: 18px
+					
+.footer
+	background-color: $main
+	padding: 40px 0 20px 0
+	&-wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&-right
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+			width: 40%
+			p
+				font-size: 16px
+				color: #ffffff
+				margin: 10px 0
+				display: flex
+				flex-direction: column
+				align-items: flex-end
+				a
+					color: #ffffff
+					display: block
+					margin-top: 20px
+					font-size: 18px
+		&-left
+			display: flex
+			width: 40%
+			a
+				width: 400px
+				img
+					max-width: 100%
+
+
+
+@import "media1200"
+@import "media992"
+@import "media768"
+@import "media578"
+
+
+
+
+
