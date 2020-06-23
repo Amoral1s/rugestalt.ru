@@ -188,6 +188,22 @@
 				color: #ffffff
 				font-size: 18px
 				line-height: 24px
+				position: relative
+				display: flex
+				width: 16%
+				justify-content: center
+				&:after
+					position: absolute
+					content: ''
+					height: 40px
+					width: 2px
+					top: 50%
+					transform: translateY(-50%)
+					right: 0%
+					background-color: #fff
+				&:last-child
+					&:after	
+						display: none
 	&-text
 		p
 			margin-bottom: 20px
@@ -323,6 +339,7 @@
 				display: flex
 				flex-direction: column
 				align-items: flex-end
+				text-align: end
 				a
 					color: #ffffff
 					display: block
@@ -335,8 +352,15 @@
 				width: 400px
 				img
 					max-width: 100%
-
-
+.callback-right form input[type="submit"]
+	transition: 0.3s
+	cursor: pointer
+	&:hover
+		transition: 0.3s
+		background-color: $accent
+		color: #ffffff
+.burger
+	display: none
 
 @import "media1200"
 @import "media992"

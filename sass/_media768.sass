@@ -1,3 +1,81 @@
 @media (max-width: 768px)
-  body
-    background-color: #fff
+  .offer
+    height: 300px
+    margin-top: 0
+  .about
+    margin-top: 10px
+  .about-services h2
+    font-size: 24px
+  .about-services
+    &-wrap
+      &-item
+        width: 100%
+        margin-bottom: 40px
+  .offer-bottom h1
+    font-size: 28px
+    line-height: 30px
+  .header
+    padding-top: 15px
+    padding-bottom: 15px
+  .header-menu
+    position: fixed
+    top: 30px
+    left: 1000px
+    z-index: 50
+    transition: 0.5s
+    ul
+      display: block
+      background-color: $main
+      padding-top: 30px
+      padding-bottom: 30px
+      padding-right: 10px
+      padding-left: 10px
+      width: 100vw
+      li
+        &:after
+          display: none
+        a
+          color: #ffffff
+          padding: 10px 0
+          font-size: 18px
+          display: block
+    &-active
+      transition: 0.5s
+      left: 15.5%
+  .offer-bottom h1
+    font-size: 40px
+    line-height: 42px
+    margin-bottom: 30px
+  .burger
+    display: block
+    position: fixed
+    top: 30px
+    right: 30px
+    height: 50px
+    width: 50px
+    transition: 0.3s
+    span
+      height: 4px
+      width: 40px
+      background-color: $main
+      display: flex
+      position: absolute
+      top: 10px
+      left: 50%
+      transform: translateX(-50%)
+      transition: 0.3s
+    span:nth-child(2)
+      top: 22px
+    span:nth-child(3)
+      top: 34px
+    &-active
+      transition: 0.3s
+      background-color: #fff
+      right: 85%
+      span
+        transform: translateX(-50%) rotate(45deg)
+        top: 22px
+        transition: 0.3s
+      span:nth-child(3)
+        top: 22px
+        transform: translateX(-50%) rotate(-45deg)
