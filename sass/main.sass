@@ -159,11 +159,17 @@
 				font-size: 18px
 		&-right
 			display: block
-			width: 48%
+			width: 45%
 			background-color: $light
 			position: relative
 			cursor: pointer
+			background-image: url(../img/play.jpg)
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center center
+			height: 250px
 			&:after
+				display: none
 				position: absolute
 				content: ''
 				top: 50%
@@ -225,7 +231,19 @@
 	.pattern2
 		background-image: url(../img/pattern2.png)
 		margin-bottom: 0
-
+.pattern, .pattern2
+	width: 100%
+	display: block
+	margin-top: 70px
+	margin-bottom: 70px
+	height: 80px
+	background-image: url(../img/pattern.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+.pattern2
+	background-image: url(../img/pattern2.png)
+	margin-bottom: 0
 .callback
 	display: flex
 	justify-content: space-between
@@ -361,6 +379,117 @@
 		color: #ffffff
 .burger
 	display: none
+.doc-offer
+	p
+		margin: 0
+		padding: 0
+		&:after
+			bottom: 0
+
+.doc
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	padding-bottom: 0
+	&-item
+		display: flex
+		align-items: flex-end
+		justify-content: center
+		position: relative
+		background: linear-gradient(180deg, rgba(255, 255, 255, .3) 18.65%, rgba(0, 0, 0, 1) 100%)
+		background-color: $light
+		width: 48%
+		height: 420px
+		margin-bottom: 50px
+		cursor: pointer
+		transition: 0.8s
+		h2
+			transition: 0.8s
+			color: #ffffff
+			font-size: 34px
+			line-height: 36px
+			margin-bottom: 40px
+			display: block
+			position: relative
+			width: 100%
+			margin-left: 40px
+			margin-right: 40px
+			text-align: center
+			padding-bottom: 40px
+			&:after
+				position: absolute
+				content: ''
+				height: 2px
+				width: 100%
+				bottom: 0
+				left: 0
+				background-color: #fff
+		&:hover
+			transition: 0.8s
+			background: linear-gradient(180deg, rgba(255, 255, 255, .3) 0.65%, rgba($main, 1) 100%)
+		img
+			position: absolute
+			max-width: 200px
+			top: 40px
+			left: 40px
+.contacts
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	flex-wrap: wrap
+	padding-bottom: 20px
+	&-map
+		display: block
+		width: 50%
+		overflow: hidden
+		&-wrap
+			height: 320px
+			overflow: hidden
+			iframe
+				height: 100%!important
+				width: 100%!important
+		h2
+			margin-bottom: 30px
+			font-size: 24px
+	&-wrap
+		width: 50%
+		margin-top: 60px
+		padding-right: 20px
+		&-item
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			width: 100%
+			margin-bottom: 50px
+			div
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				font-size: 18px
+				b
+					width: 100%
+					margin-bottom: 15px
+					font-size: 24px
+				a
+					color: #000000
+					font-weight: 700
+					font-size: 22px
+					&:hover
+						color: $main
+				img
+					display: block
+					margin-right: 30px
+					max-width: 100px
+			
+
+
+
+
+
+
+
+
+
 
 @import "media1200"
 @import "media992"
